@@ -1,5 +1,6 @@
 from modules import config, visual, token_checker, server_joiner, token_cleaner
 from itertools import cycle
+import sys
 import os
 
 __VERSION__ = "1.0.0"
@@ -88,7 +89,7 @@ class DiscordTool:
             ("Присоединиться к серверу", server_joiner.ServerJoiner),
             ("Очистить токены", token_cleaner.TokenCleaner),
             ("Настройки", self.config_manager.configure),
-            ("Выход", exit),
+            ("Выход", sys.exit),
         ]
 
         for num, (choice, _) in enumerate(menu_choices, start=1):
@@ -115,6 +116,6 @@ if __name__ == "__main__":
     try:
         DiscordTool()
     except KeyboardInterrupt:
-        exit()
+        sys.exit()
     except:
         input("Enter чтобы выйти...")
