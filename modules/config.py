@@ -1,6 +1,6 @@
+from __future__ import annotations
 from typing import List, Iterator, Dict, Any
 from dataclasses import dataclass, field
-from __future__ import annotations
 from itertools import cycle
 from modules import visual
 import json
