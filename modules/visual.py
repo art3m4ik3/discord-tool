@@ -1,6 +1,6 @@
+from __future__ import annotations
 from pystyle import Colorate, Colors, Center
 from typing import Tuple, ClassVar
-from __future__ import annotations
 from datetime import datetime
 from main import __VERSION__
 from modules import config
