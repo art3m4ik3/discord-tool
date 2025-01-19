@@ -1,10 +1,10 @@
-from __future__ import annotations
-from dataclasses import dataclass, field
 from typing import List, Iterator, Dict, Any
+from dataclasses import dataclass, field
+from __future__ import annotations
 from itertools import cycle
+from modules import visual
 import json
 import os
-from modules import visual
 
 
 @dataclass
@@ -43,7 +43,7 @@ class ConfigManager:
             "Использовать прокси",
             "Изменить тип прокси",
             "Изменить количество потоков",
-            "Завершить настройку"
+            "Завершить настройку",
         ]
 
         for num, choice in enumerate(config_choices, start=1):

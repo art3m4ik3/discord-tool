@@ -1,11 +1,11 @@
-from __future__ import annotations
-from pystyle import Colorate, Colors, Center, Cursor
-from main import __VERSION__
-from datetime import datetime
-from modules import config
+from pystyle import Colorate, Colors, Center
 from typing import Tuple, ClassVar
-import os
+from __future__ import annotations
+from datetime import datetime
+from main import __VERSION__
+from modules import config
 import random
+import os
 
 # ASCII art logo
 text_logo = """
